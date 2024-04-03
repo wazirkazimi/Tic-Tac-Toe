@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe Game</title>
+    <link rel="stylesheet" href="style.css">    
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>My Tic Tac Toe Game</li>
+        </ul>
+    </nav>
+    <div class="game-Container">
+        <div class="container">
+            <div class="line"></div>
+            <div class="box bt bl"><div class="textbox"></div></div>
+            <div class="box bt"><div class="textbox"></div></div>
+            <div class="box bt br"><div class="textbox"></div></div>
+            <div class="box bl"><div class="textbox"></div></div>
+            <div class="box"><div class="textbox"></div></div>
+            <div class="box br"><div class="textbox"></div></div>
+            <div class="box bb bl"><div class="textbox"></div></div>
+            <div class="box bb"><div class="textbox"></div></div>
+            <div class="box br bb"><div class="textbox"></div></div>
+        </div>
+        <div class="Game-Info">
+            <div class="Turn-info"><h1>Turn for X</h1></div>
+            <button id="reset">Reset</button>
+            <button id="playM">Play Music</button>
+            <div class="gif">
+                <img src="Resources/excited.gif" alt="Won">
+                <img src="Resources/crying.gif" alt="Tie">
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
