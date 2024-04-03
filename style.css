@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: blue;
+    color: white;
+    height: 14vh;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    font-size: xx-large;
+    padding: 0 12px;
+    padding-top: 10px;
+    font-style: oblique;
+    font-family: "Roboto", sans-serif;
+}
+
+.game-Container {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.container {
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(3, 10vw);
+    grid-template-rows: repeat(3, 10vw);
+    font-family: "Roboto", sans-serif;
+}
+
+.box {
+    border: 2px solid black;
+    font-size: 3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.box:hover {
+    background-color: rgb(226, 226, 226);
+}
+
+.Game-Info {
+    padding: 11px 54px;
+    margin-left: 34px;
+    font-family: 'Roboto';
+}
+
+.gif img {
+    width: 0;
+    margin-top: 86px;
+    transition: width ease-in 0s;
+}
+
+#reset {
+    cursor: pointer;
+    width: 70px;
+    height: 29px;
+    margin-top: 23px;
+    border-radius: 11px;
+    border: none;
+    background-color: red;
+    color: white;
+    font-size: medium;
+    font-weight: 400;
+    font-family: 'Roboto';
+}
+
+#playM {
+    cursor: pointer;
+    width: 110px;
+    height: 30px;
+    margin-top: 23px;
+    border-radius: 11px;
+    border: none;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-size: medium;
+    font-weight: 400;
+    font-family: 'Roboto';
+}
+
+.line {
+    width: 0;
+    height: 0.4vh;
+    background-color: red;
+    position: absolute;
+    transition: width 1s ease-in-out;
+}
+
+.bl {
+    border-left: 0;
+}
+
+.br {
+    border-right: 0;
+}
+
+.bt {
+    border-top: 0;
+}
+
+.bb {
+    border-bottom: 0;
+}
+
+@media (max-width: 900px) {
+    .game-Container {
+        flex-wrap: wrap;
+    }
+
+    .container {
+        grid-template-columns: repeat(3, 30vw);
+        grid-template-rows: repeat(3, 34vw);
+    }
+    .textbox{
+        font-size: 60px;
+    }
+    .Turn-info>h1{
+        margin-top: 35px;
+        margin-left: 24px;
+        font-size: 40px;
+    }
+}
